@@ -28,23 +28,19 @@ const HomeLayout = () => {
         <Link href="/">
           <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
         </Link>
-        <div className="flex-auto flex justify-between items-center ml-5">
+        <div className="flex-auto flex justify-end items-center mr-5">
+          {' '}
+          {/* Changed ml-5 to mr-5 */}
           <NavBarActions>
             <Link href="/builder" passHref={true}>
               <StyledButton variant="text">Editor</StyledButton>
             </Link>
-          </NavBarActions>
-          <NavBarActions>
-            <Link href="#contribute" passHref={true}>
-              <StyledButton variant="text" className="max-md:hidden">
-                Contribute
-              </StyledButton>
-            </Link>
+
             <Link href="#about-us" passHref={true}>
               <StyledButton variant="text">About us</StyledButton>
             </Link>
             <a
-              href={'https://github.com/sadanandpai/resume-builder'}
+              href={'https://github.com/SxxAq/Resume-builder'}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -120,7 +116,6 @@ const HomeLayout = () => {
           <FeatureSection />
         </div>
       </motion.div>
-
 
       <div
         id="about-us"
